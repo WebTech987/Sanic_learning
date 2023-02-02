@@ -1,11 +1,14 @@
+#new_file----it takes csv as the input and add the different columns on the data
+
 from sanic import Sanic
 from sanic import response
 from sanic.response import json, file, text
+import io
 import csv
 import pandas as pd
 
 
-app = Sanic(__name__ = "csv_file")
+app = Sanic(__name__)
 
 @app.route("/csv/download")
 async def download_csv(request):

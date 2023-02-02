@@ -1,3 +1,5 @@
+#File_upload
+#this API just takes the file as the input and read the file name and type
 from sanic import Sanic
 from sanic.response import json
 from sanic.request import File
